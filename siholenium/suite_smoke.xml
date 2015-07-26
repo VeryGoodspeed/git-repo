@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test All Smoke" parallel="tests">
+	<listeners>
+	   <listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<!--test name="SIMPLE_SMOKE_OPENING">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.SimpleSmokeTest" />
+		</classes>
+	</test-->
+	<!--test name="ACTIVIDADES_SMOKE">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.ModuloActividadesSmokeTest" />
+		</classes>
+	</test-->
+	<test name="HORARIOS_SMOKE">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.HorariosSmokeTest" />
+		</classes>
+	</test>
+	<!--test name="ASIGNACIONES_SMOKE">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest" />
+		</classes>
+	</test-->
+	<!--test name="RENTABILIDAD_SMOKE">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.RentabilidadSmokeTest" />
+		</classes>
+	</test-->
+</suite>

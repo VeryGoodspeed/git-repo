@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Test All Smoke]" parallel="tests">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="HORARIOS_SMOKE(failed)" parallel="tests" preserve-order="true">
+    <classes>
+      <class name="com.praxis.siho.test.smoke.HorariosSmokeTest">
+        <methods>
+          <include name="signOn" invocation-numbers="0"/>
+          <include name="casoRegistrarHorario"/>
+          <include name="casoModificarHorario"/>
+          <include name="casoModificarHorasRegistradas"/>
+          <include name="casoConsultarHorarios"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">HORARIOS_SMOKE</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">152.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">HORARIOS_SMOKE &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.praxis.siho.test.smoke.HorariosSmokeTest<td><a href="#m1"><b>afterClass</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">HORARIOS_SMOKE &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">com.praxis.siho.test.smoke.HorariosSmokeTest<td><a href="#m2"><b>casoModificarHorasRegistradas</b> (SMOKE, HORARIOS) </a></td><td class="numi">1</td><td class="numi">8</td></tr><tr class="failedodd"><td><a href="#m3"><b>casoModificarHorario</b> (SMOKE, HORARIOS) </a></td><td class="numi">1</td><td class="numi">19</td></tr><tr class="failedodd"><td><a href="#m4"><b>casoRegistrarHorario</b> (SMOKE, HORARIOS) </a></td><td class="numi">1</td><td class="numi">5</td></tr><tr class="failedodd"><td><a href="#m5"><b>casoConsultarHorarios</b> (SMOKE, HORARIOS) </a></td><td class="numi">1</td><td class="numi">5</td></tr><tr class="failedodd"><td><a href="#m6"><b>signOn</b> (SMOKE, HORARIOS) </a></td><td class="numi">1</td><td class="numi">133939</td></tr>
+</table>
+<h1>HORARIOS_SMOKE</h1>
+<a id="m1"></a><h2>com.praxis.siho.test.smoke.HorariosSmokeTest:afterClass</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=43.0.2357.130)
+  (Driver info: chromedriver=2.15,platform=Linux 3.13.0-58-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 332 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-58-generic&apos;, java.version: &apos;1.7.0_80&apos;
+Session ID: eeaf657c2711364eea55ef44e6421578
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.org.chromium.Chromium.KPj5FR}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=43.0.2357.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+<br/>at com.praxis.siho.test.WebDriverSetup.afterClass(WebDriverSetup.java:90)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:606)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+<br/>at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:758)
+<br/>at org.testng.TestRunner.run(TestRunner.java:613)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+<br/>at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+<br/>at java.lang.Thread.run(Thread.java:745)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.praxis.siho.test.smoke.HorariosSmokeTest:casoModificarHorasRegistradas</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=43.0.2357.130)
+  (Driver info: chromedriver=2.15,platform=Linux 3.13.0-58-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-58-generic&apos;, java.version: &apos;1.7.0_80&apos;
+Session ID: eeaf657c2711364eea55ef44e6421578
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.org.chromium.Chromium.KPj5FR}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=43.0.2357.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+<br/>at com.praxis.siho.test.pages.Page.refreshPage(Page.java:41)
+<br/>at com.praxis.siho.test.smoke.HorariosSmokeTest.casoModificarHorasRegistradas(HorariosSmokeTest.java:57)
+<br/>20 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.praxis.siho.test.smoke.HorariosSmokeTest:casoModificarHorario</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=43.0.2357.130)
+  (Driver info: chromedriver=2.15,platform=Linux 3.13.0-58-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-58-generic&apos;, java.version: &apos;1.7.0_80&apos;
+Session ID: eeaf657c2711364eea55ef44e6421578
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.org.chromium.Chromium.KPj5FR}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=43.0.2357.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+<br/>at com.praxis.siho.test.pages.Page.refreshPage(Page.java:41)
+<br/>at com.praxis.siho.test.smoke.HorariosSmokeTest.casoModificarHorario(HorariosSmokeTest.java:44)
+<br/>20 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.praxis.siho.test.smoke.HorariosSmokeTest:casoRegistrarHorario</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=43.0.2357.130)
+  (Driver info: chromedriver=2.15,platform=Linux 3.13.0-58-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-58-generic&apos;, java.version: &apos;1.7.0_80&apos;
+Session ID: eeaf657c2711364eea55ef44e6421578
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.org.chromium.Chromium.KPj5FR}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=43.0.2357.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+<br/>at com.praxis.siho.test.pages.Page.refreshPage(Page.java:41)
+<br/>at com.praxis.siho.test.smoke.HorariosSmokeTest.casoRegistrarHorario(HorariosSmokeTest.java:33)
+<br/>20 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.praxis.siho.test.smoke.HorariosSmokeTest:casoConsultarHorarios</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=43.0.2357.130)
+  (Driver info: chromedriver=2.15,platform=Linux 3.13.0-58-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-58-generic&apos;, java.version: &apos;1.7.0_80&apos;
+Session ID: eeaf657c2711364eea55ef44e6421578
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.org.chromium.Chromium.KPj5FR}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=43.0.2357.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+<br/>at com.praxis.siho.test.pages.Page.refreshPage(Page.java:41)
+<br/>at com.praxis.siho.test.smoke.HorariosSmokeTest.casoConsultarHorarios(HorariosSmokeTest.java:70)
+<br/>20 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.praxis.siho.test.smoke.HorariosSmokeTest:signOn</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RALA</td>
+<td style="padding-left:.5em;padding-right:2em">12345678</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected object to not be null</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.assertNotNull(Assert.java:399)
+<br/>at org.testng.Assert.assertNotNull(Assert.java:384)
+<br/>at com.praxis.siho.test.smoke.HorariosSmokeTest.signOn(HorariosSmokeTest.java:25)
+<br/>20 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
