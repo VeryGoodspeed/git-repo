@@ -31,11 +31,6 @@ public class HorariosSmokeTest extends WebDriverSetup {
     public void casoRegistrarHorario(){
         System.out.println("caso: casoRegistrarHorario_______________________________");
         MainPage mainPage = new MainPage(driver).refreshPage();
-        try {
-            Thread.sleep(9000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         RegistroHorariosPage registroHorariosPage = mainPage.linkToRegistroHorariosPage();
         Assert.assertNotNull(registroHorariosPage);
         Assert.assertEquals(registroHorariosPage.guardarHorarios(), registroHorariosPage.SUCCESS, "Error al guardar Horario");
