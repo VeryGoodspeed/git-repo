@@ -8,10 +8,18 @@
     <classes>
       <class name="com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest">
         <methods>
+          <include name="casoEditarEstatusAsignacion"/>
+          <include name="casoAgregarLineaTecnologica"/>
           <include name="casoBorrarEstatusAsignacion"/>
+          <include name="casoEditarLineaTecnologica"/>
+          <include name="casoAgregarTipoAsignacion"/>
+          <include name="casoBorrarLineaTecnologica"/>
+          <include name="casoAsignarCveProyectoRecurso"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="casoAgregarEstatusAsignacion"/>
+          <include name="casoEditarTipoAsignacion"/>
+          <include name="casoBorrarTipoAsignacion"/>
         </methods>
       </class>
     </classes>

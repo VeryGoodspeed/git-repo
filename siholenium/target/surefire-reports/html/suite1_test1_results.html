@@ -12,11 +12,1538 @@
 <body>
 <h1>ASIGNACIONES_SMOKE</h1>
 <p>
-  Test duration: 85.129s
+  Test duration: 24.126s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  casoAgregarEstatusAsignacion
+      </td>
+  <td class="duration">
+    0.926s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 393 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToEstatusAsignacion(MainPage.java:184)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAgregarEstatusAsignacion(ModuloAsignacionesSmokeTest.java:103)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-1">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToEstatusAsignacion(MainPage.java:184)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAgregarEstatusAsignacion(ModuloAsignacionesSmokeTest.java:103)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-2">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoAgregarLineaTecnologica
+      </td>
+  <td class="duration">
+    1.042s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 534 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToAsignacionLineaTecnologica(MainPage.java:200)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAgregarLineaTecnologica(ModuloAsignacionesSmokeTest.java:42)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-4">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToAsignacionLineaTecnologica(MainPage.java:200)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAgregarLineaTecnologica(ModuloAsignacionesSmokeTest.java:42)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-5">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoAgregarTipoAsignacion
+      </td>
+  <td class="duration">
+    0.889s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 388 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToTipoAsignacion(MainPage.java:192)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAgregarTipoAsignacion(ModuloAsignacionesSmokeTest.java:72)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-7">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToTipoAsignacion(MainPage.java:192)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAgregarTipoAsignacion(ModuloAsignacionesSmokeTest.java:72)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-8">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoAsignarCveProyectoRecurso
+      </td>
+  <td class="duration">
+    0.942s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Consulta de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 406 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Consulta de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToConsultaAsignaciones(MainPage.java:177)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAsignarCveProyectoRecurso(ModuloAsignacionesSmokeTest.java:153)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-10">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToConsultaAsignaciones(MainPage.java:177)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoAsignarCveProyectoRecurso(ModuloAsignacionesSmokeTest.java:153)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Consulta de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-11">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoBorrarEstatusAsignacion
+      </td>
+  <td class="duration">
+    1.009s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 409 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-12">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToEstatusAsignacion(MainPage.java:184)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoBorrarEstatusAsignacion(ModuloAsignacionesSmokeTest.java:123)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-13">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToEstatusAsignacion(MainPage.java:184)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoBorrarEstatusAsignacion(ModuloAsignacionesSmokeTest.java:123)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-14">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoBorrarLineaTecnologica
+      </td>
+  <td class="duration">
+    0.884s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-15', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 382 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-15">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToAsignacionLineaTecnologica(MainPage.java:200)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoBorrarLineaTecnologica(ModuloAsignacionesSmokeTest.java:60)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-16', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-16">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToAsignacionLineaTecnologica(MainPage.java:200)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoBorrarLineaTecnologica(ModuloAsignacionesSmokeTest.java:60)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-17', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-17">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoBorrarTipoAsignacion
+      </td>
+  <td class="duration">
+    0.940s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-18', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 419 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-18">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToTipoAsignacion(MainPage.java:192)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoBorrarTipoAsignacion(ModuloAsignacionesSmokeTest.java:92)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-19', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-19">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToTipoAsignacion(MainPage.java:192)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoBorrarTipoAsignacion(ModuloAsignacionesSmokeTest.java:92)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-20', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-20">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoEditarEstatusAsignacion
+      </td>
+  <td class="duration">
+    0.987s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-21', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 424 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-21">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToEstatusAsignacion(MainPage.java:184)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoEditarEstatusAsignacion(ModuloAsignacionesSmokeTest.java:113)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-22', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-22">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToEstatusAsignacion(MainPage.java:184)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoEditarEstatusAsignacion(ModuloAsignacionesSmokeTest.java:113)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-23', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-23">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoEditarLineaTecnologica
+      </td>
+  <td class="duration">
+    0.905s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-24', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 384 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-24">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToAsignacionLineaTecnologica(MainPage.java:200)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoEditarLineaTecnologica(ModuloAsignacionesSmokeTest.java:51)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-25', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-25">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToAsignacionLineaTecnologica(MainPage.java:200)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoEditarLineaTecnologica(ModuloAsignacionesSmokeTest.java:51)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-26', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-26">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  casoEditarTipoAsignacion
+      </td>
+  <td class="duration">
+    0.911s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-27', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 406 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+*** Element info: {Using=link text, value=Catálogo de Asignaciones}<br/>
+Session ID: e2b7e7c2-4afa-4664-a815-f8393323fb6a<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{platform=LINUX, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e2b7e7c2-4afa-4664-a815-f8393323fb6a, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-27">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+              org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+              org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+              org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              com.praxis.siho.test.pages.main.MainPage.linkToTipoAsignacion(MainPage.java:192)<br />
+              com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoEditarTipoAsignacion(ModuloAsignacionesSmokeTest.java:82)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+              org.testng.TestRunner.run(TestRunner.java:613)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+              org.testng.TestNG.run(TestNG.java:974)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-28', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-28">
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)<br />
+                      org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)<br />
+                      org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)<br />
+                      org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+                      com.praxis.siho.test.pages.main.MainPage.linkToTipoAsignacion(MainPage.java:192)<br />
+                      com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest.casoEditarTipoAsignacion(ModuloAsignacionesSmokeTest.java:82)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:691)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:758)<br />
+                      org.testng.TestRunner.run(TestRunner.java:613)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1062)<br />
+                      org.testng.TestNG.run(TestNG.java:974)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:606)<br />
+                      org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)<br />
+                      org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)<br />
+                      org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-29', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Catálogo de Asignaciones&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;PXL201401134&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-61-generic&apos;, java.version: &apos;1.7.0_80&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-29">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous2303206202249935526webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -27,52 +1554,10 @@
             
 <tr>
   <td class="method">
-                  casoAgregarEstatusAsignacion
-      </td>
-  <td class="duration">
-    4.894s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  casoBorrarEstatusAsignacion
-      </td>
-  <td class="duration">
-    49.176s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  casoEditarEstatusAsignacion
-      </td>
-  <td class="duration">
-    17.777s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   signOn
       </td>
   <td class="duration">
-    11.421s
+    10.523s
   </td>
   <td class="result">
         
