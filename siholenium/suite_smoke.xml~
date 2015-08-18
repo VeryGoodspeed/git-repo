@@ -20,9 +20,16 @@
 				<methods>
 					<exclude name="casoModificarFechaProyecto"/>
 					<include name="signOn" />
+					<include name="casoAsignarCveProyectoRecurso" />
 					<include name="casoAgregarLineaTecnologica" />
 					<include name="casoEditarLineaTecnologica" />
 					<include name="casoBorrarLineaTecnologica" />
+					<include name="casoAgregarTipoAsignacion" />
+					<include name="casoEditarTipoAsignacion" />
+					<include name="casoBorrarTipoAsignacion" />
+					<include name="casoAgregarEstatusAsignacion" />
+					<include name="casoEditarEstatusAsignacion" />
+					<include name="casoBorrarEstatusAsignacion" />
 				</methods>
 			</class>
 		</classes>
