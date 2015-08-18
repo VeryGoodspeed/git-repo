@@ -14,10 +14,13 @@ import static com.praxis.siho.test.common.util.RandomData.generateRandomNumberFr
 import static com.praxis.siho.test.common.constants.PageURLsConstants.PAGE_CATALOGO_PROYECTOS;
 public class CatalogoProyectosPage extends Page<CatalogoProyectosPage>{
 
-    @FindBy(how = How.ID, using = "formCatalogodeProyectos:selectOneMenu3_label")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"formCatalogodeProyectos:j_idt39\"]/h3")
+    private WebElement accordion;
+
+    @FindBy(how = How.ID, using = "formCatalogodeProyectos:j_idt32:selectOneMenu3_label")
     private WebElement proyectoLstLabel;
     int random = generateRandomNumberFromAToZ(2, 90);
-    private String projectOptionXpath = "//*[@id=\"formCatalogodeProyectos:selectOneMenu3_panel\"]/div/ul/li["+random+"]";
+    private String projectOptionXpath = "//*[@id=\"formCatalogodeProyectos:j_idt32:selectOneMenu3_panel\"]/div/ul/li["+random+"]";
 
     @FindBy(how = How.ID, using = "formCatalogodeProyectos:j_idt27")
     private WebElement nuevoBtn;
@@ -43,7 +46,7 @@ public class CatalogoProyectosPage extends Page<CatalogoProyectosPage>{
     @FindBy(how = How.ID, using = "ui-datepicker-div")
     private WebElement datepicker;
 
-    @FindBy(how = How.ID, using = "formCatalogoProyectos:j_idt69")
+    @FindBy(how = How.ID, using = "formCatalogoProyectos:j_idt73")
     private WebElement guardarBtn;
 
     @FindBy(how = How.ID, using =  "formCatalogoProyectos:messages")
@@ -97,7 +100,9 @@ public class CatalogoProyectosPage extends Page<CatalogoProyectosPage>{
     }
 
     public List<WebElement> modificarFechaVigencia(){
+        System.out.println("method: modificarFechaVigencia" );
         List<WebElement> msgLista = new ArrayList<WebElement>();
+        safeClick(accordion);
         WebElement projectOption = driver.findElement(By.xpath(projectOptionXpath));
         safeSelectOptionOnPrimefacesList(proyectoLstLabel, projectOption);
         System.out.println("project selected successfully");
@@ -124,15 +129,21 @@ public class CatalogoProyectosPage extends Page<CatalogoProyectosPage>{
                     break;
                 }
             }
+            System.out.println("one");
             JavascriptExecutor jse = (JavascriptExecutor) driver;
+            System.out.println("two");
             jse.executeScript("scroll(0,-255)");
+            System.out.println("three");
             Thread.sleep(1000l);
             safeClick(guardarBtn);
             Thread.sleep(3000l);
+            System.out.println("four");
             msgLista = navigateForWebElements(successMsg, "div:0", "ul:0", "li");
+            System.out.println("five");
             for (int i = 0; i < msgLista.size() ; i++) {
                 System.out.println("list element: " +msgLista.get(i).getText());
             }
+            System.out.println("  what da fuuuuuuuuuuuuuuuuuck!");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -234,11 +245,12 @@ public class CatalogoProyectosPage extends Page<CatalogoProyectosPage>{
     private WebElement getEditarButton(){
         System.out.println("get editar button");
         //TODO: remove this piece of scheiße
-        try {
-            Thread.sleep(1000l);
+        waitForWebElementNotDisplayed(driver.findElement(By.xpath("//*[@id=\"j_idt24\"]")));
+        /*try {
+            Thread.sleep(1l);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
         return navigateForWebElement(tbody, "tr:0", "td:5", "button:0");
     }
 }

@@ -27,11 +27,11 @@ public class LogInPage extends Page<LogInPage>{
 	}
 
 	public MainPage signon(String userName, String password) {
-    	fillUserName(userName);  
-    	System.out.println("after fill user name...");
-    	fillContrasegna(password);
-    	System.out.println("after fill passward name...");
-
+		System.out.println("filling user name");
+		fillUserName(userName);
+		System.out.println("filling password");
+		fillContrasegna(password);
+		System.out.println("click on login");
 		safeClick(btnLogin);
     	return new MainPage(driver).loadPage();
 	} 

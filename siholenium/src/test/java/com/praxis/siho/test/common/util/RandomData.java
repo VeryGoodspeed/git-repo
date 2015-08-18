@@ -31,10 +31,6 @@ public class RandomData {
 		return range;
 	}
 
-	public static String getRandomLetter(){
-		String letter = null;
-		return letter;
-	}
 	public static String getRandomLetter(boolean  isVowel){
 		String letter = "";
 		int random = (int)(26 * Math.random());

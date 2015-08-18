@@ -20,6 +20,9 @@ import static com.praxis.siho.test.common.util.Validator.isNaN;
 public class ControlCambiosPage extends Page<ControlCambiosPage> {
     public final String SUCCESS = "Registro almacenado correctamente.";
 
+    @FindBy(how = How.XPATH, using = "//*[@id=\"formConsultaControlCambios:j_idt42\"]/h3")
+    private WebElement busquedaAccordion;
+
     @FindBy(how = How.ID, using = "formConsultaControlCambios:j_idt32")
     private WebElement nuevoBtn;
 
@@ -32,8 +35,8 @@ public class ControlCambiosPage extends Page<ControlCambiosPage> {
     @FindBy(how = How.ID, using = "formNuevoControlDeCambios:j_idt75")
     private WebElement atrasBtn;
 
-    @FindBy(how = How.ID, using = "formNuevoControlDeCambios:selectOneMenu_Proyecto_label")
-    private WebElement cveProyLstLabel;
+    @FindBy(how = How.ID, using = "formConsultaControlCambios:j_idt42:selectOneMenu_Proyecto_input")
+    private WebElement cveProyTxt;
 
     @FindBy(how = How.ID, using = "formNuevoControlDeCambios:inputFase")
     private WebElement faseTxt;
@@ -113,14 +116,15 @@ public class ControlCambiosPage extends Page<ControlCambiosPage> {
     public List<String> crearNuevoControlCambio(){
         System.out.println("crearNuevoControlCambio");
         List<String> msgs = new ArrayList<String>();
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
         System.out.println("before pressing neuvoButton");
-        safeClick(nuevoBtn);
+        safeClick(busquedaAccordion);
+        //safeClick(nuevoBtn);
         System.out.println("passed");
-        waitForWebElementDisplayed(cveProyLstLabel);
-        System.out.println("one");
-        safeSelectOptionOnPrimefacesList(cveProyLstLabel, driver.findElement(By.xpath("//*[@id=\"formNuevoControlDeCambios:selectOneMenu_Proyecto_panel\"]/div/ul/li[22]")));
-        System.out.println("fight");
+
+        waitForWebElementDisplayed(cveProyTxt);
+        System.out.println("before sending cve");
+        safeSendKeys(cveProyTxt, "PX1508-SIHO4");
+        System.out.println("waiting for modal layer");
         waitForWebElementNotDisplayed(modalLayer);
         safeSendKeys(faseTxt,     "Sprint 2");
         safeSendKeys(nombreTxt,   "Susana Castañeda");
@@ -156,7 +160,7 @@ public class ControlCambiosPage extends Page<ControlCambiosPage> {
         setDateOnPicker(pickCalendarStarter, uiDatepickerDiv, "20", "7", "2016");
         safeSendKeys(directorGeneralTxt, "Elsa Ramírez");
         System.out.println("before possible error");
-        jse.executeScript("scroll(0, -250);");
+        scrollUpOrDown(-250);
         System.out.println("after possible error");
         safeClick(guardarBtn);
         System.out.println("guardar button was pressed");

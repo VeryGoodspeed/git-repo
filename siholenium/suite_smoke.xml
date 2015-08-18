@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test All Smoke" parallel="tests">
+<suite name="Test All Smoke" parallel="false">
 	<listeners>
 	   <listener class-name="org.uncommons.reportng.HTMLReporter" />
 	</listeners>
-	<!--test name="SIMPLE_SMOKE_OPENING">
+	<!--	test name="SIMPLE_SMOKE_OPENING">
 		<classes>
 			<class name="com.praxis.siho.test.smoke.SimpleSmokeTest" />
 		</classes>
@@ -14,19 +14,40 @@
 			<class name="com.praxis.siho.test.smoke.ModuloActividadesSmokeTest" />
 		</classes>
 	</test-->
-	<test name="HORARIOS_SMOKE">
+	<test name="ASIGNACIONES_SMOKE">
 		<classes>
-			<class name="com.praxis.siho.test.smoke.HorariosSmokeTest" />
+			<class name="com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest">
+				<methods>
+					<exclude name="casoModificarFechaProyecto"/>
+					<include name="signOn" />
+					<include name="casoAsignarCveProyectoRecurso" />
+					<include name="casoAgregarLineaTecnologica" />
+					<include name="casoEditarLineaTecnologica" />
+					<include name="casoBorrarLineaTecnologica" />
+					<include name="casoAgregarTipoAsignacion" />
+					<include name="casoEditarTipoAsignacion" />
+					<include name="casoBorrarTipoAsignacion" />
+					<include name="casoAgregarEstatusAsignacion" />
+					<include name="casoEditarEstatusAsignacion" />
+					<include name="casoBorrarEstatusAsignacion" />
+				</methods>
+			</class>
 		</classes>
 	</test>
-	<!--test name="ASIGNACIONES_SMOKE">
-		<classes>
-			<class name="com.praxis.siho.test.smoke.ModuloAsignacionesSmokeTest" />
-		</classes>
-	</test-->
 	<!--test name="RENTABILIDAD_SMOKE">
 		<classes>
 			<class name="com.praxis.siho.test.smoke.RentabilidadSmokeTest" />
+		</classes>
+	</test-->
+	<!--test name="PSP_SMOKE">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.PspSmokeTest" >
+			</class>
+		</classes>
+	</test-->
+	<!--test name="HORARIOS_SMOKE">
+		<classes>
+			<class name="com.praxis.siho.test.smoke.HorariosSmokeTest" />
 		</classes>
 	</test-->
 </suite>

@@ -12,10 +12,10 @@ import com.praxis.siho.test.pages.cruds.CommonCRUDS;
 public class AsignacionLineaTecnologicaPage extends Page<AsignacionLineaTecnologicaPage> {
 
 	private CommonCRUDS cruds = new CommonCRUDS();
-	@FindBy(how = How.ID, using = "formTabla:j_idt45")
+	@FindBy(how = How.ID, using = "formTabla:j_idt52")
 	private WebElement nuevoBtn;
 	
-	@FindBy(how = How.ID, using = "formTabla:j_idt46")
+	@FindBy(how = How.ID, using = "formTabla:j_idt53")
 	private WebElement eliminarBtn;
 	
 	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData:j_idt48\"]/div/div[2]/span")
@@ -23,32 +23,32 @@ public class AsignacionLineaTecnologicaPage extends Page<AsignacionLineaTecnolog
 
 	@FindBy(how = How.XPATH, using = "//*[@id=\"panelDatos_content\"]/h1")
 	private WebElement labelLineaTecAlta;   //@Deprecated
-
+								//*[@id="panelDatos_content"]/h1
 	@FindBy(how = How.XPATH, using = "//*[@id=\"formDatos\"]/h2")
 	private WebElement labelLineaTecAlta2;
 	
 	@FindBy(how = How.ID, using = "formDatos:claveLineaT")
 	private WebElement claveTxt;
-	
+
 	@FindBy(how = How.ID, using = "formDatos:descripcionLineaT")
 	private WebElement descTxt;
 	
-	@FindBy(how = How.ID, using = "formDatos:j_idt25")
+	@FindBy(how = How.ID, using = "formDatos:j_idt32")
 	private WebElement guardarBtn;
 
-	@FindBy(how = How.ID, using = "formDatos:j_idt27")
+	@FindBy(how = How.ID, using = "formDatos:j_idt34")
 	private WebElement atrasBtn;
 	
 	@FindBy(how = How.XPATH, using = "//*[@id=\"messages\"]/div/ul/li/span")
 	private WebElement altaExitoMsg; //"Registro almacenado correctamente."
 	
-	@FindBy(how = How.ID, using = "formDatos:j_idt26")
+	@FindBy(how = How.ID, using = "formDatos:j_idt33")
 	private WebElement guardarEdicionBtn;
 
 	@FindBy(how = How.ID, using = "formTabla:tableData_data")
 	private WebElement tbody;
 
-	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData_paginator_top\"]/span[5]/span")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData_paginator_top\"]/span[4]/span")
 	private WebElement nextPage;
 
 	public AsignacionLineaTecnologicaPage(WebDriver driver) {
@@ -88,7 +88,6 @@ public class AsignacionLineaTecnologicaPage extends Page<AsignacionLineaTecnolog
 
 	@Deprecated
 	public boolean agregarLineaTecnologica(String clave, String descripcion) {
-		System.out.println("AgregarLineaTecnologica::::::::::::::");
 		boolean success = false;
 		safeClick(nuevoBtn);
 		waitForWebElementDisplayed(labelLineaTecAlta2);
@@ -100,6 +99,7 @@ public class AsignacionLineaTecnologicaPage extends Page<AsignacionLineaTecnolog
 				e.printStackTrace();
 			}
 		}
+		System.out.println("about to send: " + success);
 		return success;
 	}
 

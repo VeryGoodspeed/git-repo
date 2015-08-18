@@ -13,10 +13,10 @@ public class TipoAsignacionPage extends Page<TipoAsignacionPage> {
 
 	CommonCRUDS cruds = new CommonCRUDS();
 
-	@FindBy(how = How.ID, using = "formTabla:j_idt48")
+	@FindBy(how = How.ID, using = "formTabla:j_idt55")
 	private WebElement nuevoBtn;
 	
-	@FindBy(how = How.ID, using = "formTabla:j_idt49")
+	@FindBy(how = How.ID, using = "formTabla:j_idt56")
 	private WebElement eliminarBtn;
 
 	@FindBy(how = How.XPATH, using = "//*[@id=\"formDatos\"]/h1")
@@ -28,13 +28,13 @@ public class TipoAsignacionPage extends Page<TipoAsignacionPage> {
 	@FindBy(how = How.ID, using = "formDatos:descripcionTipoAsig")
 	private WebElement descTxt;
 							
-	@FindBy(how = How.ID, using = "formDatos:j_idt28")
+	@FindBy(how = How.ID, using = "formDatos:j_idt35")
 	private WebElement guardarBtn;
 
-	@FindBy(how = How.ID, using = "formDatos:j_idt30")
+	@FindBy(how = How.ID, using = "formDatos:j_idt37")
 	private WebElement atrasBtn;
 	
-	@FindBy(how = How.ID, using = "formDatos:j_idt29")
+	@FindBy(how = How.ID, using = "formDatos:j_idt36")
 	private WebElement guardarEdicionBtn;
 	
 	@FindBy(how = How.XPATH, using = "//*[@id=\"messages\"]/div/ul/li/span")
@@ -42,8 +42,8 @@ public class TipoAsignacionPage extends Page<TipoAsignacionPage> {
 	
 	@FindBy(how = How.ID, using = "formTabla:tableData_data")
 	private WebElement tbody;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData_paginator_top\"]/span[5]")
+	//*[@id="formTabla:tableData_paginator_top"]/span[4]
+	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData_paginator_top\"]/span[4]")
 	private WebElement nextPage;
 	
 	public TipoAsignacionPage(WebDriver driver) {
@@ -83,11 +83,8 @@ public class TipoAsignacionPage extends Page<TipoAsignacionPage> {
 
 	@Deprecated
 	public boolean agregarTipoAsignacion(String clave, String descripcion){
-		System.out.println("____________________________________");
-		System.out.println("agregarTipoAsignacion method");
 		boolean success = false;
 		safeClick(nuevoBtn);
-		System.out.println("agregarTipo asignacion metodo");
 		waitForWebElementDisplayed(tipoAsignacionLabel);
 		if (isLabelWithTextPresent(tipoAsignacionLabel, "Datos del Tipo de Asignación")) {
 			try {

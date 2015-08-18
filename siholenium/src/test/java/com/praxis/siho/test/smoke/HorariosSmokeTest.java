@@ -11,6 +11,8 @@ import com.praxis.siho.test.pages.main.horarios.RegistroHorariosPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Map;
+
 import static com.praxis.siho.test.common.constants.GroupsConstants.*;
 
 /**
@@ -20,16 +22,16 @@ public class HorariosSmokeTest extends WebDriverSetup {
 
     @Test(enabled = true, priority = 1, groups = {SMOKE, HORARIOS}, dataProviderClass = SmokeTestDP.class, dataProvider = SIGNON)
     public void signOn(String credential, String password) {
+        testCase("signOn");
         LogInPage logInPage = new LogInPage(driver).refreshPage();
-        System.out.println("after instanciating login page: " + logInPage);
         Assert.assertNotNull(logInPage);
-        System.out.println("before method signon");
         MainPage mainPage = logInPage.signon(credential, password);
         Assert.assertNotNull(mainPage);
     }
+
     @Test(enabled = true, priority = 2, groups = {SMOKE, HORARIOS})
     public void casoRegistrarHorario(){
-        System.out.println("caso: casoRegistrarHorario_______________________________");
+        testCase("casoRegistrarHorario");
         MainPage mainPage = new MainPage(driver).refreshPage();
         RegistroHorariosPage registroHorariosPage = mainPage.linkToRegistroHorariosPage();
         Assert.assertNotNull(registroHorariosPage);
@@ -39,7 +41,7 @@ public class HorariosSmokeTest extends WebDriverSetup {
 
     @Test(enabled = true, priority = 2, groups = {SMOKE, HORARIOS})
     public void casoModificarHorario(){
-        System.out.println("Caso casoModificarHorario_______________________");
+        testCase("casoModificarHorario");
         boolean success = false;
         MainPage mainPage = new MainPage(driver).refreshPage();
         ControlHorariosPage controlHorariosPage = mainPage.linkToControlHorariosPage();
@@ -52,27 +54,27 @@ public class HorariosSmokeTest extends WebDriverSetup {
     }
     @Test(enabled = true, priority = 2, groups = {SMOKE, HORARIOS})
     public void casoModificarHorasRegistradas(){
-        System.out.println("caso ModificarHorasRegistradas_______________________________");
-        boolean success = false;
+        testCase("casoModificarHorasRegistradas");
         MainPage mainPage = new MainPage(driver).refreshPage();
-        /*RegistroHorariosPage reghrsPage = mainPage.linkToRegistroHorariosPage();
-        System.out.println("fecha:::::::::::::" +reghrsPage.obtenerFechaConGuardadoHorario().get("fecha"));*/
         PuntualidadAsistenciaPage puntualidadAsistenciaPage = mainPage.linkToPuntualidadAsistenciaPage();
-        Assert.assertNotNull(puntualidadAsistenciaPage );
-
+        Assert.assertNotNull(puntualidadAsistenciaPage);
         Assert.assertEquals(puntualidadAsistenciaPage.modificarHorasRegistradas(), puntualidadAsistenciaPage.SUCCESS);
     }
 
     @Test(enabled = true, priority = 2, groups = {SMOKE, HORARIOS})
     public void casoConsultarHorarios() {
-        System.out.println("caso ConsultarHorarios____________ØØÆÐ§ªÞÆ§ÐªÆØ§ÐªØÆ§ØÐÞªÆ§ÐÞØÆ§ÐÞªØÆ§ÐªÆÆ§ÐªÆ§Ðª");
+        testCase("casoConsultarHorarios");
         boolean success = false;
         MainPage mainPage = new MainPage(driver).refreshPage();
         RegistroHorariosPage reghrsPage = mainPage.linkToRegistroHorariosPage();
         String fecha = reghrsPage.obtenerFechaConGuardadoHorario().get("fecha");
         ConsultaHorariosPage consultarHorariosPage = mainPage.linkToConsultaHorariosPage();
         Assert.assertNotNull(consultarHorariosPage);
-        consultarHorariosPage.consultarHorarios(fecha);
+
+        Map<String,String> messageResponse = consultarHorariosPage.consultarHorarios(fecha);
+        if (messageResponse != null && !messageResponse.isEmpty()){
+            System.out.println("horario aceptado? "+messageResponse.containsValue("Aceptado"));
+        }
         //Assert.assertEquals(consultarHorariosPage.consultarHorarios(), consultarHorariosPage.SUCCESS);
     }
 }

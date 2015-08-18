@@ -18,7 +18,8 @@ public class PageURLsConstants {
     //MODULO ACTIVIDADES
     public static final String PAGE_CAPTURA_ACTIVIDADES   = URL + "views/capturaActividades.xhtml";
     public static final String PAGE_CAT_ACTIVIDADES       = URL + "views/catalogoActividades.xhtml";
-    public static final String PAGE_ASIG_CAT_ACTIV_PROY   = URL + "views/asignarCatalogoActividadesaProyecto.xhtml";
+    public static final String PAGE_ASIG_CAT_ACTIV_PROY   = URL + "views/asignarCatalogoActividad" +
+            "esaProyecto.xhtml";
     public static final String PAGE_BLOQ_MENSUAL_ACTIVI   = URL + "views/bloqueoMensualActividades.xhtml";
     
     //HORARIOS
@@ -44,5 +45,18 @@ public class PageURLsConstants {
     public static final String PAGE_RENTABILIDAD_PROYECTO = URL + "views/rentabilidadProyectos.xhtml";
     public static final String PAGE_RENTABILIDAD_CURSO    = URL + "views/rentabilidadCurso.xhtml";
 
-
+    //PSP
+    public static final String PAGE_CONFIG_PROYECTOS      = URL + "views/configuracionProyecto.xhtml";
+    public static final String PAGE_ESTIMACION_TAMANIO    = URL + "views/estimacionTamano.xhtml";
+    public static final String PAGE_ASISTENTE_PROBE       = URL + "views/AsistentePROBE.xhtml";
+    public static final String PAGE_PLANEACION_ACT        = URL + "views/capturaActividadesPSP.xhtml.xhtml";
+    public static final String PAGE_CAPTURA_DEFECTOS      = URL + "views/capturaDefectos.xhtml";
+    public static final String PAGE_BITACORA_DEFECTOS     = URL + "views/BitacoraDefectosPSP.xhtml";
+    public static final String PAGE_RESUMEN_PSP           = URL + "views/resumenMetricasGenerales.xhtml";
+    public static final String PAGE_CAT_NIVEL_FASE_ACT    = URL + "views/CatalogoNivelFaseActividadPSP.xhtml";
+    public static final String PAGE_CAT_PLANTILLAS        = URL + "views/CatalogoPlantillasPSP.xhtml";
+    public static final String PAGE_CAT_DEFECTOS          = URL + "views/CatalogoDefectosPSP.xhtml";
+    public static final String PAGE_CAT_TIPO_MEDIDA       = URL + "views/catalogoTipoMedida.xhtml";
+    public static final String PAGE_CAT_TIPO_FUNC         = URL + "views/catalogoTipoFuncionalidad.xhtml";
+    public static final String PAGE_CAT_TAMANIO_RELATIVO  = URL + "views/catalogoTamanoRelativo.xhtml";
 }

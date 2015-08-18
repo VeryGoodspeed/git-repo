@@ -10,7 +10,7 @@ import com.praxis.siho.test.pages.cruds.CommonCRUDS;
 public class CatalogoActividadesPage extends Page<CatalogoActividadesPage> {
 
 	private CommonCRUDS cruds = new CommonCRUDS();
-	@FindBy(how = How.ID, using = "formActividades:j_idt24")
+	@FindBy(how = How.ID, using = "formActividades:j_idt31")
 	private WebElement nuevoBtn;
 	                                    //*[@id="j_idt40"]/div[1]/h1
 	//@FindBy(how = How.XPATH, using = "//*[@id=\" j_idt40\"]/div[1]/h1")
@@ -20,13 +20,13 @@ public class CatalogoActividadesPage extends Page<CatalogoActividadesPage> {
 	@FindBy(how = How.ID, using = "j_idt40:insddput_Miercodddlxesl")
 	private WebElement claveTxt;
 	
-    @FindBy(how = How.ID, using = "j_idt40:catDescripcion")
+    @FindBy(how = How.ID, using = "j_idt47:catDescripcion")
 	private WebElement descTxt;
     
-    @FindBy(how = How.ID, using = "j_idt40:j_idt43")
+    @FindBy(how = How.ID, using = "j_idt47:j_idt50")
 	private WebElement guardarBtn;
     
-    @FindBy(how = How.ID, using = "j_idt40:j_idt45")
+    @FindBy(how = How.ID, using = "j_idt47:j_idt52")
     private WebElement atrasBtn;
     
     @FindBy(how = How.XPATH, using = "//*[@id=\"formActividades:messages\"]/div/ul/li/span")
@@ -60,9 +60,7 @@ public class CatalogoActividadesPage extends Page<CatalogoActividadesPage> {
 	public boolean agregarActividad(String clave, String descripcion){
 		boolean success = false;
 		safeClick(nuevoBtn);
-		System.out.println("road to z" + isLabelWithTextPresent(nuevoBtn, "Nuevo"));
 		if (isLabelWithTextPresent(nuevoBtn, "Nuevo")){
-			System.out.println("entered ");
 			try {
 				success = cruds.agregarRegistro(claveTxt, descTxt, guardarBtn, successMsg, null, descripcion);
 			} catch (Exception e) {

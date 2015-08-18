@@ -22,19 +22,24 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 	private final int randomNumber = generateRandomNumberFromAToZ(2, 900);
 	private String randomXpath = "//*[@id=\"formConsultaHorarios:cboRecursos_panel\"]/div/ul/li[" + randomNumber + "]";
 
-	@FindBy(how = How.ID, using = "formConsultaHorarios:cboRecursos_label")
-	private WebElement listLabel;
+	@FindBy(how = How.XPATH, using = "//*[@id=\"formConsultaHorarios:j_idt47\"]/h3")
+	private WebElement busquedaAccordion;
+
+	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt47:cboRecursos_label")
+	private WebElement recursoLstLabel;
+	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt47:cboRecursos_panel")
+	private WebElement recursoLstPanel;
 
 	//*[@id="formConsultaHorarios:cboRecursos_panel"]/div/ul/li[795]
 	//*[@id="formConsultaHorarios:cboRecursos_panel"]/div/ul/li[605]
 	@FindBy(how = How.XPATH, using = "//*[@id=\"formConsultaHorarios:cboRecursos_panel\"]/div/ul/li[795]")
 	private WebElement option;
 
-	@FindBy(how = How.XPATH, using = "//*[@id=\"formConsultaHorarios:cboEstatusRec_label\"]")
+	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt47:cboEstatusRec_label")
 	private WebElement estatusRecLabel; //list label
 
-	@FindBy(how = How.XPATH, using = "//*[@id=\"formConsultaHorarios:cboEstatusRec_panel\"]/div/ul/li[3]")
-	private WebElement estatusRecOption; //list selection → inactivo
+	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt47:cboEstatusRec_panel")
+	private WebElement estatusRecPanel; //list selection → inactivo
 
 	@FindBy(how = How.ID, using = "formConsultaHorarios:btonNuevo")
 	private WebElement nuevoBtn;
@@ -45,7 +50,7 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt30")
 	private WebElement img;
 
-	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt29")
+	@FindBy(how = How.ID, using = "formConsultaHorarios:j_idt37")
 	private WebElement divMod;
 
 	@FindBy(how = How.ID, using = "formContent:btnGuardar")
@@ -82,8 +87,11 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 	@FindBy(how = How.ID, using = "formContent:fechaFin_input")
 	private WebElement finAsignacionTxt;
 
-	@FindBy(how = How.ID, using = "formContent:j_idt26")
+	@FindBy(how = How.ID, using = "formContent:j_idt32")
 	private WebElement confirmacionBtn;
+
+	@FindBy(how = How.ID, using = "formContent:j_idt32")
+	private WebElement confirmacionPromptBtn;
 
 	@FindBy(how = How.ID, using = "formContent:j_idt25")
 	private WebElement cancelarBtn;
@@ -94,21 +102,22 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 	public ConsultaAsignacionesPage(WebDriver driver) {
 		super(driver, PAGE_CONSULTA_ASIGNACIONES);		
 	}
-	
-	public void handleList(){
-		option = driver.findElement(By.xpath(randomXpath));
-		safeSelectOptionOnPrimefacesList(listLabel, option);
-	}
 
 	public Map seleccionarRecursoUtil(){
 		Map<String, String> datosRecurso = new HashMap<String, String>();
-		//randomRecursoOptionXpath = "//*[@id=\"formConsultaHorarios:cboRecursos_panel\"]/div/ul/li[8]";
-		String randomRecursoOptionXpath = "//*[@id=\"formConsultaHorarios:cboRecursos_panel\"]/div/ul/li[" + generateRandomNumberFromAToZ(2, 222) + "]";
-		option = driver.findElement(By.xpath(randomRecursoOptionXpath));
-		safeSelectOptionOnPrimefacesList(listLabel, option);
-		//get dates from relational table at the bottom of the page
 		try {
-			Thread.sleep(3000l);
+			Thread.sleep(5000l);
+			//randomRecursoOptionXpath = "//*[@id=\"formConsultaHorarios:cboRecursos_panel\"]/div/ul/li[8]";
+			String randomRecursoOptionXpath = "//*[@id=\"formConsultaHorarios:cboRecursos_panel\"]/div/ul/li[" + generateRandomNumberFromAToZ(2, 222) + "]";
+			//option = driver.findElement(By.xpath(randomRecursoOptionXpath));
+			System.out.println("it is working so far");
+			//safeSelectOptionOnPrimefacesList(recursoLstLabel, option);
+
+			selectValueOnPrimefacesListInLoop(recursoLstLabel, recursoLstPanel, generateRandomNumberFromAToZ(2, 111));
+			//get dates from relational table at the bottom of the page
+			waitForWebElementNotDisplayed(divMod);
+			Thread.sleep(1500l);
+
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -119,18 +128,21 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 		String fechaFinRec = null;
 		for (WebElement tr : trs) {
 			System.out.println("go elements " + count++);
+			System.out.println("trs " + tr.getText());
 			List<WebElement> tds = getChildElements(tr, "td");
 			if (tds.size() == 1) {
-				seleccionarRecursoUtil();
+				System.out.println("recurso has no registries");
+				return seleccionarRecursoUtil();
 			} else {
 				System.out.println("tds: " + tds.size());// not good case when it is tds 1
-				fechaIngresoRec = safeGetLabel(tds.get(2));
+				fechaIngresoRec = safeGetLabel(tds.get(12));
 				fechaFinRec = safeGetLabel(tds.get(13));
-				if (fechaIngresoRec.equals("") ||fechaFinRec.equals("")) {
-					seleccionarRecursoUtil();
+				if (fechaIngresoRec.equals("") || fechaFinRec.equals("")) {
+					return seleccionarRecursoUtil();
 				} else {
 					datosRecurso.put("fechaIngresoRec", fechaIngresoRec);
 					datosRecurso.put("fechaFinRec",     fechaFinRec);
+					System.out.println("about to return datos recurso: " + datosRecurso);
 					return datosRecurso;
 				}
 			}
@@ -150,8 +162,8 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 			Date finDate 		 = sdf.parse(fechaFinRec);
 			String tempFechaIni = safeGetInputText(fechaIniProTxt);
 			String tempFechaFin = safeGetInputText(fechaFinProTxt);
-			System.out.println("temp fecha ini: " + tempFechaIni);
-			System.out.println("temp fecha fin: " + tempFechaFin);
+			/*System.out.println("temp fecha ini: " + tempFechaIni);
+			System.out.println("temp fecha fin: " + tempFechaFin);*/
 			if (!tempFechaIni.equals("") && !tempFechaFin.equals("")){
 				System.out.println("not the first");
 				//waitForWebElementTextChangedDisplayed(fechaIniProTxt, tempFechaIni);
@@ -179,7 +191,6 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 				safeSelectOptionOnPrimefacesList(tipoPagoLstLabel, tipoPagoLstOption);
 				//enter dates for beginning and end
 				if (fechaIniProDate.equals(finDate)){
-					System.out.println("impossible quiz");
 					fechaAsignacion = fechaFinRec;
 					fechaFinAsignacion = fechaFinRec;
 				} else {
@@ -200,21 +211,21 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 				}
 				safeSendKeys(inicioAsignacionTxt, fechaAsignacion);
 				safeSendKeys(finAsignacionTxt, fechaFinAsignacion);
+
 				//Click on 'guardar'
 				safeClick(guardarBtn);
 				//confirm transaction
 				safeClick(confirmacionBtn);
-
+				System.out.println("responseMessage: " + safeGetLabel(successMsg));
 				if (isLabelWithTextPresent(successMsg, "La operación se efectuó con éxito.")){
 					System.out.println("Successfully done");
 					System.out.println("Great success ");
 					success = true;
 				} else {
-					System.out.println("unattainable piece of ss... code");
+					System.out.println("unattainable piece of code");
 				}
 				try {/// this can be deleted
 					Thread.sleep(3000l);
-					System.out.println("success : " + success);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -227,20 +238,20 @@ public class ConsultaAsignacionesPage extends Page<ConsultaAsignacionesPage> {
 			System.out.println("catch success : " + success);
 			parse.printStackTrace();
 		}
-		System.out.println("about to send success : " + success);
+		System.out.println("Success : " + success);
 		return success;
 	}
 
 	public boolean asignarCveProyectoARecurso() {
 		boolean success = false;
-		System.out.println("inside of the method asignarCveProyectoARecurso");
 		String fechaIngresoRec, fechaFinRec;
 		//select 'inactivo' state from list 'estatus rec'
 		waitForWebElementNotDisplayed(divMod);
-		safeSelectOptionOnPrimefacesList(estatusRecLabel, estatusRecOption);
-
+		safeClick(busquedaAccordion);
+		selectValueOnPrimefacesListInLoop(estatusRecLabel, estatusRecPanel, "Inactivo");
 		//select resource from list 'recurso'
 		waitForWebElementNotDisplayed(divMod);
+
 		Map<String, String> recursoSeleccionado = seleccionarRecursoUtil();
 		if (recursoSeleccionado.size() != 0){
 			fechaIngresoRec = recursoSeleccionado.get("fechaIngresoRec");

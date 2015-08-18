@@ -27,10 +27,10 @@ public class WebDriverSetup {
     protected WebDriver driver;
     
     static {
-        BROWSER = Browser.valueOf(SetTestVariables.configProp.getProperty("browser"));
-        MODE = SetTestVariables.configProp.getProperty("mode");
+        BROWSER 	    = Browser.valueOf(SetTestVariables.configProp.getProperty("browser"));
+        MODE 			= SetTestVariables.configProp.getProperty("mode");
         SELENIUM_SERVER = SetTestVariables.configProp.getProperty("selenium_sever_url");
-        CHROME_DRIVER = SetTestVariables.configProp.getProperty("chrome_driver");
+        CHROME_DRIVER   = SetTestVariables.configProp.getProperty("chrome_driver");
     }
     
     @BeforeClass
@@ -84,7 +84,10 @@ public class WebDriverSetup {
         	exception.printStackTrace();
         }
     }
-
+	public static void testCase(Object name){
+		System.out.println("____________________________________________________");
+		System.out.println("[test case: " + name + "]");
+	}
     @AfterClass
     public void afterClass() {
         driver.close();

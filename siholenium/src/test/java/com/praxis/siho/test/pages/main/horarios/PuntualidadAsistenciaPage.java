@@ -18,19 +18,20 @@ import static com.praxis.siho.test.common.constants.PageURLsConstants.PAGE_PUNTU
  */
 public class PuntualidadAsistenciaPage extends Page<PuntualidadAsistenciaPage> {
     public final String SUCCESS = "Registro actualizado correctamente.";
-    private int random = RandomData.generateRandomNumberFromAToB(2,606);
-    @FindBy(how = How.ID, using = "j_idt22:selectOneMenuRecursos_label")
-    private WebElement recursoLstLabel;
-    private String recursoSelectedXpath = "//*[@id=\"j_idt22:selectOneMenuRecursos_panel\"]/div/ul/li[699]";
-    //private String recursoSelectedXpath = "//*[@id=\"j_idt22:selectOneMenuRecursos_panel\"]/div/ul/li["+random+"]";
 
-    @FindBy(how = How.ID, using = "j_idt22:tableHorarios")
+    private int random = RandomData.generateRandomNumberFromAToB(2,606);
+    @FindBy(how = How.ID, using = "j_idt29:selectOneMenuRecursos_label")
+    private WebElement recursoLstLabel;
+    @FindBy(how = How.ID, using = "j_idt29:selectOneMenuRecursos_panel")
+    private WebElement recursoLstPanel;
+
+    @FindBy(how = How.ID, using = "j_idt29:tableHorarios")
     private  WebElement registryTable;
 
-    @FindBy(how = How.ID, using = "j_idt22:tableHorarios_data")
+    @FindBy(how = How.ID, using = "j_idt29:tableHorarios_data")
     private WebElement registryTbody;
 
-    @FindBy(how = How.ID, using = "j_idt22:messages")
+    @FindBy(how = How.ID, using = "j_idt29:messages")
     private WebElement responseMessage;
 
     public PuntualidadAsistenciaPage(WebDriver driver) {
@@ -40,7 +41,7 @@ public class PuntualidadAsistenciaPage extends Page<PuntualidadAsistenciaPage> {
     public String modificarHorasRegistradas(){
         String msg = null;
         System.out.println("modificarHorasRegistradas, before waiting");
-        safeSelectOptionOnPrimefacesList(recursoLstLabel, driver.findElement(By.xpath(recursoSelectedXpath)));
+        selectValueOnPrimefacesListInLoop(recursoLstLabel, recursoLstPanel, 698); //688 - RALA
         waitForWebElementDisplayed(registryTable);
         System.out.println("after waiting");
         try {
@@ -56,23 +57,28 @@ public class PuntualidadAsistenciaPage extends Page<PuntualidadAsistenciaPage> {
 
         List<WebElement> registros = getChildElements(registryTbody, "tr");
         System.out.println(" registros size: " + registros.size());
-        System.out.println("anybody: " + registros.get(0).getTagName());
-        System.out.println("anybody: possible" + navigateForWebElement(registros.get(0), "td:10").getText());
-        WebElement editarBtn = navigateForWebElement(registros.get(0), "td:10", "span:0");
-        WebElement checkBtn  = navigateForWebElement(registros.get(0), "td:10", "span:1");
+        System.out.println("anybody: " + registros.get(3).getTagName());
+        System.out.println("anybody: possible " + navigateForWebElement(registros.get(0), "td:10").getText());
+        WebElement editarBtn = navigateForWebElement(registros.get(3), "td:10", "span:0");
+        WebElement checkBtn  = navigateForWebElement(registros.get(3), "td:10", "span:1");
+
         System.out.println("one");
-        WebElement cancelBtn = navigateForWebElement(registros.get(0), "td:10", "span:2");
+        System.out.println(editarBtn.getTagName());
+        System.out.println(checkBtn.getTagName());
+        WebElement cancelBtn = navigateForWebElement(registros.get(3), "td:10", "span:2");
+        System.out.println("twot");
         for (WebElement registro : registros){
+            System.out.println("fecha?: " + navigateForWebElement(registro, "td:0").getText());
             String fecha = safeGetLabel(navigateForWebElement(registro, "td:0"));
-            if (fecha != null && fecha.equals("22/07/2015")){
-                if (safeGetLabel(navigateForWebElement(registro, "td:9")).trim().matches("(Si|No)")){
+            if (fecha != null && fecha.equals("13/08/2015")){
+                if (safeGetLabel(navigateForWebElement(registro, "td:9")).trim().matches("(Si|No|Aceptado)")){
                     System.out.println("it did match the intended Scheiße, meine Freundin");
                 }
             }
         }
-        WebElement entradaTxt = driver.findElement(By.id("j_idt22:tableHorarios:0:j_idt43"));
+        WebElement entradaTxt = driver.findElement(By.id("j_idt29:tableHorarios:3:j_idt50"));
         System.out.println("two");
-        WebElement salidaTxt  = driver.findElement(By.id("j_idt22:tableHorarios:0:j_idt48"));
+        WebElement salidaTxt  = driver.findElement(By.id("j_idt29:tableHorarios:3:j_idt55"));
         System.out.println("three");
         safeClick(editarBtn);
         System.out.println("before entering data in input fields");

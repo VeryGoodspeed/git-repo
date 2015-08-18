@@ -10,5 +10,6 @@ public class GroupsConstants {
 	public static final String ACTIVIDADES        = "ACTIVIDADES";
 	public static final String HORARIOS           = "HORARIOS";
 	public static final String RENTABILIDAD       = "RENTABILIDAD";
+	public static final String PSP 			      = "PSP";
 	
 }

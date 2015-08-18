@@ -13,10 +13,10 @@ public class EstatusAsignacionPage extends Page<EstatusAsignacionPage> {
 	
 	CommonCRUDS cruds = new CommonCRUDS();
 	
-	@FindBy(how = How.ID, using = "formTabla:j_idt44")
+	@FindBy(how = How.ID, using = "formTabla:j_idt51")
 	private WebElement nuevoBtn;
 	
-	@FindBy(how = How.ID, using = "formTabla:j_idt45")
+	@FindBy(how = How.ID, using = "formTabla:j_idt52")
 	private WebElement eliminarBtn;
 
 	@FindBy(how = How.XPATH, using = "//*[@id=\"formDatos\"]/h1")
@@ -28,22 +28,25 @@ public class EstatusAsignacionPage extends Page<EstatusAsignacionPage> {
 	@FindBy(how = How.ID, using = "formDatos:descripcionTipoAsig")
 	private WebElement descTxt;
 	
-	@FindBy(how = How.ID, using = "formDatos:j_idt24")
+	@FindBy(how = How.ID, using = "formDatos:j_idt31")
 	private WebElement guardarBtn;
 
-	@FindBy(how = How.ID, using = "formDatos:j_idt26")
+	@FindBy(how = How.ID, using = "formDatos:j_idt33")
 	private WebElement atrasBtn;
-	
+
 	@FindBy(how = How.XPATH, using = "//*[@id=\"messages\"]/div/ul/li/span")
 	private WebElement successMsg;
 	
-	@FindBy(how = How.ID, using = "formDatos:j_idt25")
+	@FindBy(how = How.ID, using = "formDatos:j_idt32")
 	private WebElement guardarEdicionBtn;
+
+	@FindBy(how = How.ID, using = "formDatos:j_idt33")
+	private WebElement cancelarEdicionBtn;
 
 	@FindBy(how = How.ID, using = "formTabla:tableData_data")
 	private WebElement tbody;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData_paginator_top\"]/span[5]/span")
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"formTabla:tableData_paginator_top\"]/span[4]/span")
 	private WebElement nextPage;
 	
 	public EstatusAsignacionPage(WebDriver driver) {

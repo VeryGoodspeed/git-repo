@@ -18,13 +18,11 @@ public class CommonCRUDS extends BrowserBehaviour {
 		boolean ifIdExists = true;
 		boolean success = false;
 		String responseMessage = null;
-		System.out.println("agregarRegistro method: before entering while...");
 		while(ifIdExists){
-
 			responseMessage = getMessageFromAgregarRegistro(claveTxt, descTxt, guardarBtn, altaExitoMsg, clave, descripcion);
 			if (responseMessage.equals("Registro almacenado correctamente.")){
-				System.out.println("registro exitoso!");
 				ifIdExists = !(success = true);
+				return success;
 			} else if (responseMessage.equals("El Id. ya existe, favor de validar.")) {
 				System.out.println("la clave ingresada ya existe");
 			} else{
@@ -32,7 +30,8 @@ public class CommonCRUDS extends BrowserBehaviour {
 				ifIdExists = false;
 			}
 			if (ifIdExists){
-				clave   = "EA" + generateRandomNonZeroNumberUpTo(100);
+				System.out.println("changing cve");
+				clave   = "WW" + generateRandomNonZeroNumberUpTo(100);
 			}
 		}
 		return success;
@@ -84,27 +83,18 @@ public class CommonCRUDS extends BrowserBehaviour {
 
 	public String getMessageFromAgregarRegistro(WebElement claveTxt, WebElement descTxt, WebElement guardarBtn, WebElement altaExitoMsg, String clave, String descripcion) throws Exception {
 		String resultMessage = null;
-		System.out.println("cve: " + clave);
 		if (clave != null) {
-			System.out.println("safesendkey for claveTxt: " + claveTxt.getTagName());
 			Thread.sleep(1000);
 			safeSendKeys(claveTxt, clave);
-			System.out.println("safesendkey for claveTXt ---------- the end");
 		}
-		System.out.println("one");
 		if (descripcion != null) {
 			safeSendKeys(descTxt, descripcion);
 		}
-		System.out.println("intermission");
 		safeClick(guardarBtn);
-		System.out.println("after clicking guardarBtn");
-
 		waitForWebElementDisplayed(altaExitoMsg);
-		Thread.sleep(1000);
 		System.out.println("after waiting for success message");
+		Thread.sleep(1000);
 		resultMessage = safeGetLabel(altaExitoMsg);
-		System.out.println("all sussed out");
-		System.out.println("good:  result message is this: " + resultMessage);
 		if (resultMessage == null || resultMessage.matches("([^\\w]|$)")){
 			throw new Exception("error al recuperar respuesta del proceso de agregar Registro");
 		}
@@ -116,19 +106,18 @@ public class CommonCRUDS extends BrowserBehaviour {
 		String resultMessage = null;
 		WebElement openEditarButton = getButtonEditar(tbody, nextPage, clave);
 		waitForWebElementClickable(openEditarButton);
-		System.out.println("is it getting at here ?");
 		if (openEditarButton != null) {
 			safeClick(openEditarButton);
 			waitForWebElementDisplayed(formLabel);
 			try {
-				formLabel.isEnabled();			
+				formLabel.isEnabled();
 				safeSendKeys(descTxt, descripcion);
 				safeClick(guardarEdicionBtn);
 				waitForWebElementDisplayed(altaExitoMsg);
+				resultMessage = safeGetLabel(altaExitoMsg);
 				if (resultMessage == null || resultMessage.matches("([^\\w]|$)")){
 					throw new Exception("error al recuperar respuesta del proceso de editar Registro");
 				}
-				resultMessage = safeGetLabel(altaExitoMsg);
 			} catch (NoSuchElementException e) {
 				e.printStackTrace();
 			}
@@ -137,6 +126,11 @@ public class CommonCRUDS extends BrowserBehaviour {
 	}
 
 	private WebElement getButtonEditar(WebElement tbody, WebElement nextPage, String clave) {
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		for (WebElement tr : tbody.findElements(By.tagName("tr"))) {
 			waitForWebElementDisplayed(tr);
 			List<WebElement> tds = tr.findElements(By.tagName("td"));
@@ -157,12 +151,15 @@ public class CommonCRUDS extends BrowserBehaviour {
 	int count = 0;
 	private WebElement getCheckBox(WebElement tbody, WebElement nextPage, String clave) {
 		System.out.println("this is the occurrence: " + count++);
+		try {
+			Thread.sleep(1100);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		for (WebElement tr : tbody.findElements(By.tagName("tr"))) {
 			waitForWebElementDisplayed(tbody);
 			System.out.println("pbody side: "+tbody.findElements(By.tagName("tr")).size());
-			System.out.println("tr: " + tr);
 			System.out.println("tr contents " + tr.getText());
-			System.out.println("lst_ - " + tr.findElements(By.tagName("td")));
 			List<WebElement> tds = tr.findElements(By.tagName("td"));
 			System.out.println("tds : " + tds.size());
 			System.out.println(tds.get(1).getText().trim() + " is it equals to: " + clave.trim());

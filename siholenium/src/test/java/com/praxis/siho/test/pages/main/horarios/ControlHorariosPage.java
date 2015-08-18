@@ -18,13 +18,13 @@ public class ControlHorariosPage extends Page<ControlHorariosPage>{
     public final String ERROR_HORA_ENTRADA_MENOR_A_SALIDA = "La hora de ingreso no debe ser mayor a la hora de salida";
     public final String SUCCESS = "Horarios establecidos";
 
-    @FindBy(how = How.ID, using = "formControlHorarios:j_idt31")
+    @FindBy(how = How.ID, using = "formControlHorarios:j_idt38")
     private WebElement guardarBtn;
 
-    @FindBy(how = How.ID, using = "formControlHorarios:j_idt32")
+    @FindBy(how = How.ID, using = "formControlHorarios:j_idt39")
     private WebElement cancelarBtn;
 
-    @FindBy(how = How.ID, using = "formControlHorarios:j_idt33")
+    @FindBy(how = How.ID, using = "formControlHorarios:j_idt40")
     private WebElement restaurarBtn;
 
     private int random = RandomData.generateRandomNumberFromAToZ(2,606);
@@ -35,7 +35,7 @@ public class ControlHorariosPage extends Page<ControlHorariosPage>{
     @FindBy(how = How.XPATH, using = "//*[@id=\"formControlHorarios:cmb_tipo\"]/tbody/tr/td[1]/div/div[2]")
     private WebElement recursoRadio;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"formControlHorarios:cmb_tipo\"]/tbody/tr/td[3]/div/div[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"formControlHorarios:cmb_tipo\"]/tbody/tr/td[3]/div/div[2]/span")
     private WebElement proyectoRadio;
 
     private int firstRandomHour = RandomData.generateRandomNumberFromAToZ(2,6);
@@ -67,7 +67,6 @@ public class ControlHorariosPage extends Page<ControlHorariosPage>{
 
     public String modificarHorario(){
         String msg = null;
-        System.out.println("modificarHorario");
         safeSelectOptionOnPrimefacesList(recursoLstLabel,   driver.findElement(By.xpath(recursoXpath)));
         safeSelectOptionOnPrimefacesList(horarioDeLstLabel, driver.findElement(By.xpath(horarioDeXpath)));
         safeSelectOptionOnPrimefacesList(horarioALstLabel,  driver.findElement(By.xpath(horarioAxPath)));

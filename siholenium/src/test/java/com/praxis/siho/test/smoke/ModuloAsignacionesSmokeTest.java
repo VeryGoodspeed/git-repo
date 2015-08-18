@@ -13,60 +13,61 @@ import com.praxis.siho.test.pages.main.asignacion.ConsultaAsignacionesPage;
 import com.praxis.siho.test.pages.main.asignacion.EstatusAsignacionPage;
 import com.praxis.siho.test.pages.main.asignacion.ProximoDesasignarsePage;
 import com.praxis.siho.test.pages.main.asignacion.TipoAsignacionPage;
-
 import java.util.List;
-
 import static com.praxis.siho.test.common.constants.GroupsConstants.ASIGNACIONES;
 import static com.praxis.siho.test.common.constants.GroupsConstants.SIGNON;
 import static com.praxis.siho.test.common.constants.GroupsConstants.SMOKE;
 import static com.praxis.siho.test.common.util.RandomData.generateRandomNonZeroNumberUpTo;
+
+import static com.praxis.siho.test.common.util.RandomData.*;
+
 public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
-	final String randomCve   = "EA" + generateRandomNonZeroNumberUpTo(100);
-	final String randomCve2  = "EA" + generateRandomNonZeroNumberUpTo(100);
-	final String descripcion = "A des";
+	final String randomCve   = getRandomLetter(false) + getRandomLetter(true) + generateRandomNonZeroNumberUpTo(100);
+	final String randomCve2  = getRandomLetter(false) + getRandomLetter(true) + generateRandomNonZeroNumberUpTo(100);
+	final String descripcion = "A descripción";
 
 	@Test(enabled = true, priority = 1, groups = {SMOKE, ASIGNACIONES}, dataProviderClass = SmokeTestDP.class, dataProvider = SIGNON)
     public void signOn(String credential, String password) {
-        LogInPage logInPage = new LogInPage(driver).refreshPage();
-        System.out.println("after instanciating login page: " + logInPage);
+		testCase("signOn");
+		LogInPage logInPage = new LogInPage(driver).refreshPage();
         Assert.assertNotNull(logInPage);
-        System.out.println("before method signon");
         MainPage mainPage = logInPage.signon(credential, password);
         Assert.assertNotNull(mainPage);       
     }
 	
 	@Test(enabled = true, priority = 2, groups = {SMOKE, ASIGNACIONES})
-	public void casoAgregarLineaTecnologica() throws InterruptedException{
+	public void casoAgregarLineaTecnologica() {
+		testCase("casoAgregarLineaTecnologica");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		AsignacionLineaTecnologicaPage  asigLineaTecnologicaPage = mainPage.linkToAsignacionLineaTecnologica();
         Assert.assertNotNull(asigLineaTecnologicaPage, "failed to load linea tecnologica asignacion");
-        System.out.println("after linea tecnologica asignacion**************");        
-        System.out.println("this shit will be the code: "+randomCve);
         Assert.assertTrue(asigLineaTecnologicaPage.agregarLineaTecnologica(randomCve, descripcion), "error en el caso agregar linea tecnológica");
 	}
 	
 	@Test(enabled = true, priority = 3, groups = {SMOKE, ASIGNACIONES})
-	public void casoEditarLineaTecnologica() throws InterruptedException{		
+	public void casoEditarLineaTecnologica() {
+		testCase("casoEditarLineaTecnologica");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		AsignacionLineaTecnologicaPage  asigLineaTecnologicaPage = mainPage.linkToAsignacionLineaTecnologica();
-        Assert.assertNotNull(asigLineaTecnologicaPage, "failed to load linea tecnologica asignacion");        
-       	System.out.println(" about to modify ");
+		Assert.assertNotNull(asigLineaTecnologicaPage, "failed to load linea tecnologica asignacion");
        	asigLineaTecnologicaPage.editarLineaTecnologica(randomCve, descripcion + "A");                
 	}
 	
 	@Test(enabled = true, priority = 4, groups = {SMOKE, ASIGNACIONES})
-	public void casoBorrarLineaTecnologica() throws InterruptedException{
+	public void casoBorrarLineaTecnologica() {
+		testCase("casoBorrarLineaTecnologica");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		AsignacionLineaTecnologicaPage  asigLineaTecnologicaPage = mainPage.linkToAsignacionLineaTecnologica();
         Assert.assertNotNull(asigLineaTecnologicaPage, "failed to load linea tecnologica asignacion");        
        	System.out.println(" about to do logical deletion");
         asigLineaTecnologicaPage.agregarLineaTecnologica(randomCve2, descripcion);     
        	asigLineaTecnologicaPage.refreshPage();
-       	asigLineaTecnologicaPage.borrarLineaTecnologica (randomCve2);                
+       	asigLineaTecnologicaPage.borrarLineaTecnologica (randomCve2);
 	}
 
 	@Test(enabled = true, priority = 5, groups = {SMOKE, ASIGNACIONES})
 	public void casoAgregarTipoAsignacion(){
+		testCase("casoAgregarTipoAsignacion");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		TipoAsignacionPage  asigTipoAsignacionPage = mainPage.linkToTipoAsignacion();
         Assert.assertNotNull(asigTipoAsignacionPage, "failed to load tipo asignacion");
@@ -76,6 +77,7 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 	
 	@Test(enabled = true, priority = 6, groups = {SMOKE, ASIGNACIONES})
 	public void casoEditarTipoAsignacion(){
+		testCase("casoEditarTipoAsignacion");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		TipoAsignacionPage  asigTipoAsignacionPage = mainPage.linkToTipoAsignacion();
         Assert.assertNotNull(asigTipoAsignacionPage, "failed to load tipo asignacion");
@@ -84,7 +86,8 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 	}
 
 	@Test(enabled = true, priority = 4, groups = {SMOKE, ASIGNACIONES})
-	public void casoBorrarTipoAsignacion() throws InterruptedException{		
+	public void casoBorrarTipoAsignacion() throws InterruptedException{
+		testCase("casoBorrarTipoAsignacion");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		TipoAsignacionPage  asigTipoAsignacionPage = mainPage.linkToTipoAsignacion();
         Assert.assertNotNull(asigTipoAsignacionPage, "failed to load tipo asignacion");
@@ -95,6 +98,7 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 
 	@Test(enabled = true, priority = 7, groups = {SMOKE, ASIGNACIONES})
 	public void casoAgregarEstatusAsignacion(){
+		testCase("casoAgregarEstatusAsignacion");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		EstatusAsignacionPage  asigTipoAsignacionPage = mainPage.linkToEstatusAsignacion();
         Assert.assertNotNull(asigTipoAsignacionPage, "failed to load estatus asignacion");
@@ -104,6 +108,7 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 	
 	@Test(enabled = true, priority = 8, groups = {SMOKE, ASIGNACIONES})
 	public void casoEditarEstatusAsignacion(){
+		testCase("casoEditarEstatusAsignacion");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		EstatusAsignacionPage  asigTipoAsignacionPage = mainPage.linkToEstatusAsignacion();
         Assert.assertNotNull(asigTipoAsignacionPage, "failed to load estatus asignacion");
@@ -113,6 +118,7 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 	
 	@Test(enabled = true, priority = 8, groups = {SMOKE, ASIGNACIONES})
 	public void casoBorrarEstatusAsignacion(){
+		testCase("casoBorrarEstatusAsignacion");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		EstatusAsignacionPage  asigTipoAsignacionPage = mainPage.linkToEstatusAsignacion();
         Assert.assertNotNull(asigTipoAsignacionPage, "failed to load estatus asignacion");
@@ -123,6 +129,7 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 	
 	@Test(enabled = true, priority = 9, groups = {SMOKE, ASIGNACIONES})
 	public void casoConsultarProximosDesasignarse(){
+		testCase("casoConsultarProximosDesasignarse");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		ProximoDesasignarsePage page = mainPage.linkToProximoDesasignarse();
 		Assert.assertNotNull(page);
@@ -132,28 +139,25 @@ public class ModuloAsignacionesSmokeTest extends WebDriverSetup {
 	}
 	@Test(enabled = true, priority = 2, groups = {SMOKE, ASIGNACIONES})
 	public void casoConsultasAsignacionesPorRecurso(){
+		testCase("casoConsultasAsignacionesPorRecurso");
 		MainPage mainPage = new MainPage(driver).loadPage();
 		ConsultaAsignacionesPage  consultaAsignacionesPage = mainPage.linkToConsultaAsignaciones();
         Assert.assertNotNull(consultaAsignacionesPage, "failed to load consultaAsignaciones");
-        System.out.println("after consulta asignaciones");                
-        consultaAsignacionesPage.handleList();
+        System.out.println("after consulta asignaciones");
 	}
 
 	@Test(enabled = true, priority = 9, groups = {SMOKE, ASIGNACIONES})
 	public void casoAsignarCveProyectoRecurso(){
-		System.out.println(" case: casosAsignarCveProyectoRecurso");
+		testCase("casoAsignarCveProyectoRecurso");
 		MainPage mainPage = new MainPage(driver).refreshPage();
-
-		System.out.println("before the link to consulta asignaciones");
 		ConsultaAsignacionesPage  consultaAsignacionesPage = mainPage.linkToConsultaAsignaciones();
 		Assert.assertNotNull(consultaAsignacionesPage, "failed to load consultaAsignaciones");
-
-		System.out.println("after consulta asignaciones");
 		Assert.assertTrue(consultaAsignacionesPage.asignarCveProyectoARecurso(), "caso de prueba no exitoso");
 	}
 
 	@Test(enabled = true, priority = 9, groups = {SMOKE, ASIGNACIONES})
 	public void casoModificarFechaProyecto(){
+		testCase("casoModificarFechaProyecto");
 		MainPage mainPage = new MainPage(driver).refreshPage();
 		CatalogoProyectosPage catalogoProyectosPage = mainPage.linkToCatalogoProyectos();
 		System.out.println("about to do modificar vigentcia");

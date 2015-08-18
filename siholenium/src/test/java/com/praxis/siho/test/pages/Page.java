@@ -3,6 +3,8 @@ package com.praxis.siho.test.pages;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -60,5 +62,11 @@ public abstract class Page <T> extends BrowserBehaviour{
                 return url.equals(driver.getCurrentUrl());
             }
         };
-    }    
+    }
+
+    public void scrollUpOrDown(int offset){
+        String move = String.valueOf(offset);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("javascript:window.scrollBy(0," + move + ")");
+    }
 }

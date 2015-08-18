@@ -39,22 +39,17 @@ public class RegistroHorariosPage extends Page<RegistroHorariosPage> {
     }
 
     public String guardarHorarios(){
-        System.out.println("guardarHorarios");
         waitForWebElementDisplayed(guardarBtn);
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("before pressing the button");
         safeClick(guardarBtn);
-        System.out.println("after pressing the button");
         waitForWebElementDisplayed(messageResponse);
-        System.out.println("after waiting for message");
         return safeGetLabel(navigateForWebElement(messageResponse, "div:0", "ul:0", "li:0"));
     }
     public HashMap<String, String> obtenerFechaConGuardadoHorario(){
-        System.out.println("obtenerFechaConGuardadoHorario");
         HashMap<String, String> txts = new HashMap<String,String>();
         waitForWebElementDisplayed(guardarBtn);
         try {
@@ -62,21 +57,12 @@ public class RegistroHorariosPage extends Page<RegistroHorariosPage> {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("good");
         txts.put("fecha", safeGetInputText(fechaTxt));
-        System.out.println("very good");
         txts.put("hrEntrada", safeGetInputText(hrEntradaTxt));
-        System.out.println("very very good");
         txts.put("hrEntrada", safeGetInputText(hrSalidaTxt));
-
-        System.out.println("good lord!");
-        System.out.println("before pressing the button");
         safeClick(guardarBtn);
-        System.out.println("after pressing the button");
         waitForWebElementDisplayed(messageResponse);
-        System.out.println("after waiting for message");
         safeGetLabel(navigateForWebElement(messageResponse, "div:0", "ul:0", "li:0"));
-        System.out.println("conveys" + txts);
         return txts;
     }
 }
