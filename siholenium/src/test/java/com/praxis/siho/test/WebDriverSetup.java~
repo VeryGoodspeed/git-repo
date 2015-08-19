@@ -53,14 +53,16 @@ public class WebDriverSetup {
 	                    newProfile.setPreference("browser.cache.disk.enable", false);
 	                    driver = new FirefoxDriver(newProfile);
 	                    break;
-	                case INTERNET_EXPLORER:	               
+	                case INTERNET_EXPLORER:
+	                	System.out.println("shit flow");
 	                    driver = new InternetExplorerDriver();
 	                    break;
-	                default:	                	
+	                default:
+	                	System.out.println("errroooorrr");
 	                    throw new Exception("Browser not supported.");
 	            }
 	        } else if (REMOTE.equals(MODE)) {
-	        	System.out.println("remote!");
+	        	System.out.println("remoteeeeeeee!");
 	            switch (BROWSER) {
 	                case CHROME:
 	                    driver = new RemoteWebDriver(new URL(SELENIUM_SERVER), DesiredCapabilities.chrome());
