@@ -1,0 +1,11 @@
+siho.url=http://192.168.6.99:8080/sihoweb/
+
+# CHROME, FIREFOX or INTERNET_EXPLORER
+browser=FIREFOX
+#selenium_sever_url=http://192.168.2.23:8888/wd/hub
+#selenium_sever_url=http://192.168.2.23:4444/wd/hub
+selenium_sever_url=http://172.16.2.9:7777/wd/hub
+
+####local or remote
+mode=remote
+chrome_driver=/usr/lib/chromium-browser/chromedriver
